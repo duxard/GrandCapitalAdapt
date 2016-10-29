@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/foundation.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div class="row">
+            <div class="large-12 columns">
+                <h1 id="title" class="text-center zero-margin">Принцип работы ECN-счета</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="one large-8 columns">
+                <div class="row">
+<!--                   LEFT PART - BANKS-->
+                    <div class="banks-part small-12 medium-6 large-6 columns text-center">
+                        <div class="row">
+                            <div class="small-6 medium-6 large-6 columns text-center">
+                                <div><img src="../images/bank1.png" alt="pic"></div>
+                                <div class="bank">Банк 1</div>
+                                <div><img src="../images/bank2.png" alt="pic"></div>
+                                <div class="bank">Банк 2</div>
+                                <div><img src="../images/bank3.png" alt="pic"></div>
+                                <div class="bank small-text">Банк 3</div>
+                                <div><img src="../images/bank4.png" alt="pic"></div>
+                                <div class="bank">Банк 4</div>
+                            </div>
+                            <div class="four small-6 medium-6 large-6 columns text-center">
+                                <div class="bank-info">
+                                    <p id="first-bank-item" class="bank-info-first bank-info-font"><span class="bold-font">Bid</span> - 1.27458</p>
+                                    <p class="bank-info-font zero-margin"><span class="bold-font">Ask</span> - 1.27458</p>
+                                    <p class="bank-info-first bank-info-font"><span class="bold-font">Bid</span> - 1.27458</p>
+                                    <p class="bank-info-sec bank-info-font zero-margin"><span class="bold-font">Ask</span> - 1.27458</p>
+                                    <p class="bank-info-first bank-info-font"><span class="bold-font">Bid</span> - 1.27458</p>
+                                    <p class="bank-info-sec bank-info-font zero-margin"><span class="bold-font">Ask</span> - 1.27458</p>
+                                    <p class="bank-info-first bank-info-font"><span class="bold-font">Bid</span> - 1.27458</p>
+                                    <p class="bank-info-sec bank-info-font zero-margin"><span class="bold-font">Ask</span> - 1.27458</p>
+                                </div>
+                                <div id="arrows">
+                                    <img id="arr1" class="abs" src="./images/arr1.png" alt="arr">
+                                    <img id="arr2" class="abs" src="./images/arr2.png" alt="arr">
+                                    <img id="arr3" class="abs" src="./images/arr3.png" alt="arr">
+                                    <img id="arr4" class="abs" src="./images/arr4.png" alt="arr">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+<!--                    ENDOF LEFT PART (BANKS)-->
+                    <div class="main-part small-12 medium-6 large-6 columns text-center">
+                        <div id="logo">
+                            <img src="./images/logo1.png" alt="logo" width="175" height="102">
+                        </div>
+                        <h5 id="logo-title"><span>ECN-agregator</span></h5>
+                        <table id="ecn" >
+                           <thead>
+                                <tr>
+                                    <th scope="column">providers</th>
+                                    <th scope="column">bid</th>
+                                    <th scope="column">ask</th>
+                                    <th scope="column">spead</th>
+                                </tr>
+                           </thead>
+                             <tr>
+                                <td class="td-bold">Bank 1</td>
+                                <td class="highlight-red">1.24578</td>
+                                <td>1.24578</td>
+                                <td>1.2 pips</td>
+                            </tr>
+                            <tr>
+                                <td class="td-bold">Bank 2</td>
+                                <td>1.24578</td>
+                                <td>1.24578</td>
+                                <td>1.2 pips</td>
+                            </tr>
+                            <tr>
+                                <td class="td-bold">Bank 3</td>
+                                <td>1.24578</td>
+                                <td>1.24578</td>
+                                <td>1.2 pips</td>
+                            </tr>
+                            <tr>
+                                <td class="td-bold">Bank 4</td>
+                                <td>1.24578</td>
+                                <td class="highlight-yellow">1.24578</td>
+                                <td>1.2 pips</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="large-4 columns text-center">
+                <div id="monitor-arr">
+                    <img src="./images/arr5.png" alt="pic">
+                </div>
+                <div id="monitor">
+                    <img src="./images/monitor.png" alt="pic">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

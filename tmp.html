@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/foundation.css">
+    <style>
+        .one{
+            background: green;
+        }
+        .two{
+            background: yellow;
+        }
+        .three{
+            background: #369;
+        }
+        .div {
+      width:100%;overflow:hidden;white-space:nowrap;
+      border:1px solid red;
+}
+.div div {float:left;}
+    </style>
+</head>
+<body>
+    <div class=row>
+<!--
+       <div class="large-4 large-push-8 columns">2</div>
+       <div class="large-4 columns">7</div>
+       <div class="large-4 large-pull-8 columns">3</div>
+-->
+       <div class="large-4 large-push-8 columns one ">2</div>
+       <div class="large-4 columns two">7</div>
+       <div class="large-4 large-pull-8 columns three">3</div>
+    </div>
+    <table width="100%" border="1">
+ <tr>
+ <td width="30%">
+ <div class="div"><div>
+ First First First First First First First <br/> First First First First First First First First 
+ </div></div>
+ </td>
+ <td width="40%">
+ <div class="div"><div>
+ Second Second Second Second Second Second Second Second Second Second Second Second Second
+ </div></div>
+ </td>
+ <td width="30%">
+ <div class="div"><div>
+ Third Third Third Third Third Third Third Third Third Third Third Third Third Third Third
+ </div></div>
+ </td>
+ </tr>
+</table>
+</body>
+</html>
