@@ -283,9 +283,10 @@ thead{
 footer{
     background: transparent;
     margin: 90px auto;
+    font-family: $ptSansReg;
 }
 #sec-title{
-    font: 2.1em $ptSansReg;
+    font-size: 2.1em; 
 //    text-align: center;
 }
 
@@ -293,14 +294,30 @@ footer{
     display: table-cell;
     width: 15px;
     color: #b3b3b4;
-    font: 2.5em $ptSansReg;
+    font-size: 2.5em; 
     vertical-align: top;
 }
-.footInf{
+.foot-inf{
     display: table-cell;
     width: 100%;
     vertical-align: top;
+    
 }
+
+.foot-inf-head{
+    
+}
+.foot-inf-descr{
+   
+}
+
+
+
+
+
+
+
+
 
 .line{
     outline: 1px solid green;
