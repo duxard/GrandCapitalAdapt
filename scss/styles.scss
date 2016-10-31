@@ -65,6 +65,10 @@ $ptRegRuss: 'ptsans', sans-serif;
     box-sizing: border-box;
 }
 
+html, body{
+    margin:0;
+}
+
 /************** styles  *******************/
 .zero-margin{
     margin: 0 !important;
@@ -73,14 +77,13 @@ body{
     background: $bodyCol;
     padding-top: 68px;
 }
-.initialise{
+#wrapper{
+    outline: 1px solid red;
+    background: #fff;
+    margin: 0 auto;
     max-width: 1180px;
     padding: 0;
     @include brdx();
-}
-#wrapper{
-    background: #fff;
-    margin: 0 auto;
 }
 #title{
     font: 2.1em $ptSansReg;
@@ -266,7 +269,10 @@ thead{
     padding-right: 0 !important;
 }
 
-footer{
+#footer{
+    max-width: 1180px;
+    padding: 0;
+    @include brdx();
     background: transparent;
     margin: 60px auto;
     font-family: $ptRegRuss;
@@ -350,6 +356,16 @@ footer{
 }
 
 //for table on small dimensions
+@media screen and (min-width: 640px) and (max-width: 682px){
+    table#ecn thead th{
+        padding: 10px 0 !important;
+    }
+    table#ecn tbody td{
+        padding: 20px 0 !important;
+    }
+   
+}
+
 @media screen and (max-width: 400px){
     table#ecn th, table#ecn td{
         padding: 0 !important;
