@@ -19,17 +19,18 @@
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'ptsans';
+  src: url("../fonts/ptsans-russ/pts55f-webfont.eot");
+  src: url("../fonts/ptsans-russ/pts55f-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/ptsans-russ/pts55f-webfont.woff2") format("woff2"), url("../fonts/ptsans-russ/pts55f-webfont.woff") format("woff"), url("../fonts/ptsans-russ/pts55f-webfont.ttf") format("truetype"), url("../fonts/ptsans-russ/pts55f-webfont.svg#pt_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 /*************************************************************************/
 .zero-margin {
   margin: 0 !important; }
 
 /*******************   TEMPORARY ***********************************/
-.two {
-  background: yellow; }
-
-.three {
-  background: green; }
-
 .four {
   display: table;
   padding-left: 0 !important;
@@ -208,8 +209,8 @@ thead {
 
 footer {
   background: transparent;
-  margin: 90px auto;
-  font-family: "pt_sansregular", sans-serif; }
+  margin: 60px auto;
+  font-family: "ptsans", sans-serif; }
 
 #sec-title {
   font-size: 2.1em; }
@@ -219,17 +220,47 @@ footer {
   width: 15px;
   color: #b3b3b4;
   font-size: 2.5em;
-  vertical-align: top; }
+  vertical-align: top;
+  margin-right: 5px; }
+  .digit p {
+    margin: 0 10px; }
 
 .foot-inf {
   display: table-cell;
   width: 100%;
   vertical-align: top; }
 
-.line {
-  outline: 1px solid green; }
+.foot-inf-head {
+  font-size: 1.3em;
+  line-height: 1.2;
+  margin: 11px 0 3px 0; }
 
-/****************** crutches *********************************/
+.foot-inf-descr {
+  font-size: 1em;
+  line-height: 1.35;
+  text-align: justify; }
+
+.line {
+  margin: 0 0 30px 0; }
+
+/*************** up arrow ***********/
+#up {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 47px;
+  height: 49px;
+  background: url(../images/up.png) 0 0 no-repeat;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  opacity: .7;
+  display: none; }
+
+/****************** adaptive config *********************************/
 @media screen and (max-width: 1180px) {
   #monitor-arr {
     display: none; } }
@@ -237,6 +268,10 @@ footer {
 @media screen and (max-width: 1023px) {
   #monitor {
     margin-top: 0; } }
+
+@media screen and (max-width: 768px) {
+  #sec-title {
+    text-align: center; } }
 
 @media screen and (max-width: 680px) {
   #arrows {
@@ -251,6 +286,22 @@ footer {
   #monitor {
     width: 100%;
     min-width: 210px; } }
+
+@media screen and (max-width: 300px) {
+  .bank-info-first {
+    margin-top: 103px; } }
+
+@media screen and (max-width: 279px) {
+  .bank-info-first {
+    margin-top: 91px; } }
+
+@media screen and (max-width: 252px) {
+  .bank-info-first {
+    margin-top: 86px; } }
+
+@media screen and (max-width: 235px) {
+  .bank-info-first {
+    margin-top: 80px; } }
 
 @media screen and (max-width: 290px) {
   #monitor {
