@@ -47,8 +47,6 @@
 
 }
 
-/*************************************************************************/
-
 $bodyCol: #f0eff0;
 $defGreen: #00b297;
 $defRed: #d4524b;
@@ -67,43 +65,27 @@ $ptRegRuss: 'ptsans', sans-serif;
     box-sizing: border-box;
 }
 
+/************** styles  *******************/
 .zero-margin{
     margin: 0 !important;
 }
-
-/*******************   TEMPORARY ***********************************/
-
-.four{
-    display: table;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-}
-
-
-
-/*************************************************************************/
-
 body{
     background: $bodyCol;
     padding-top: 68px;
 }
-
 .initialise{
     max-width: 1180px;
     padding: 0;
     @include brdx();
 }
-
 #wrapper{
     background: #fff;
     margin: 0 auto;
 }
-
 #title{
     font: 2.1em $ptSansReg;
     padding: 40px 0;
 }
-
 .banks-part{
     background: transparent;
 }
@@ -120,17 +102,20 @@ body{
     display: table-cell;
     text-align: center;
 }
+.four{
+    display: table;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
 #arrows{
     position: relative;
     max-width: 80px;
     min-width: 40px;
     display: table-cell;
 }
-
 .abs{
     position: absolute;
 }
-
 #arr1{
     left: 0;
     top: 64px;
@@ -147,7 +132,6 @@ body{
     left: 0;
     top: 493px;
 }
-
 #first-bank-item{
     margin-top: 50px;
 }
@@ -165,7 +149,7 @@ body{
     font-family: $ptSansBold;
 }
 
-/*************************center part ***************/
+/************** center part ***************/
 
 #logo-title{
     font: 1.4em $ptSansBold;
@@ -198,7 +182,6 @@ thead{
     th{
         color: white;
         font: 1em $ptSansItalic;
-        
     }
 }
 
@@ -207,7 +190,7 @@ thead{
     background: $defGray !important;
 }
 
-/***************************** monitor *********/
+/************* monitor *************/
 #monitor-arr{
     background: #fff;
     width: 49px;
@@ -324,7 +307,7 @@ footer{
     margin: 0 0 30px 0;
 }
 
-/*************** up arrow ***********/
+/**************** up arrow ********************/
 
 #up{
     @include brdx();
@@ -339,9 +322,7 @@ footer{
     display: none;
 }
 
-
-/****************** adaptive config *********************************/
-
+/****************** adaptive config ********************/
 
 @media screen and (max-width: 1180px){
     #monitor-arr{

@@ -2,7 +2,7 @@ $(document).foundation()
 
 var upper = $("#up");
 
-$(document).scroll(function(){
+$(window).scroll(function(){
     if($(this).scrollTop() > 90){
         upper.fadeIn(300);
     }else{
@@ -11,5 +11,5 @@ $(document).scroll(function(){
 });
 
 upper.on('click',function(){
-    $("body,html").animate({"scrollTop":0}, 200);
+    $("html, body").animate({"scrollTop":0}, 200);
 });

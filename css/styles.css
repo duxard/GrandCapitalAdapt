@@ -26,17 +26,10 @@
   font-weight: normal;
   font-style: normal; }
 
-/*************************************************************************/
+/************** styles  *******************/
 .zero-margin {
   margin: 0 !important; }
 
-/*******************   TEMPORARY ***********************************/
-.four {
-  display: table;
-  padding-left: 0 !important;
-  padding-right: 0 !important; }
-
-/*************************************************************************/
 body {
   background: #f0eff0;
   padding-top: 68px; }
@@ -72,6 +65,11 @@ body {
 .bank-info {
   display: table-cell;
   text-align: center; }
+
+.four {
+  display: table;
+  padding-left: 0 !important;
+  padding-right: 0 !important; }
 
 #arrows {
   position: relative;
@@ -111,7 +109,7 @@ body {
 .bold-font {
   font-family: "pt_sans_captionbold", sans-serif; }
 
-/*************************center part ***************/
+/************** center part ***************/
 #logo-title {
   font: 1.4em "pt_sans_captionbold", sans-serif;
   margin: 29px 0 19px 0; }
@@ -143,7 +141,7 @@ thead {
   font: 1em "pt_sans_captionbold", sans-serif !important;
   background: #dfe1e5 !important; }
 
-/***************************** monitor *********/
+/************* monitor *************/
 #monitor-arr {
   background: #fff;
   width: 49px;
@@ -243,7 +241,7 @@ footer {
 .line {
   margin: 0 0 30px 0; }
 
-/*************** up arrow ***********/
+/**************** up arrow ********************/
 #up {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -260,7 +258,7 @@ footer {
   opacity: .7;
   display: none; }
 
-/****************** adaptive config *********************************/
+/****************** adaptive config ********************/
 @media screen and (max-width: 1180px) {
   #monitor-arr {
     display: none; } }
