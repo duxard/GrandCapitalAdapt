@@ -277,6 +277,7 @@ thead{
     margin: 60px auto;
     font-family: $ptRegRuss;
 }
+
 #sec-title{
     font-size: 2.1em; 
 }
@@ -313,6 +314,8 @@ thead{
     margin: 0 0 30px 0;
 }
 
+
+
 /**************** up arrow ********************/
 
 #up{
@@ -330,6 +333,43 @@ thead{
 
 /****************** adaptive config ********************/
 
+//table-view-bug fixes
+@media screen and (width: 634px){
+    .foot-inf{
+       width: 93%;
+    }
+}
+@media screen and (width: 569px){
+    .foot-inf{
+       width: 92%;
+    }
+}
+@media screen and (width: 379px){
+    .foot-inf{
+       width: 88%;
+    }
+}
+@media screen and (width: 378px){
+    .foot-inf{
+       width: 88%;
+    }
+}
+@media screen and (width: 365px){
+    .foot-inf{
+       width: 87%;
+    }
+}
+@media screen and (width: 301px){
+    .foot-inf{
+       width: 85%;
+    }
+}
+@media screen and (width: 292px){
+    .foot-inf{
+       width: 84%;
+    }
+}
+//monitor view fixes
 @media screen and (max-width: 1180px){
     #monitor-arr{
         display: none;
